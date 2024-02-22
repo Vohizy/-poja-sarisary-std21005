@@ -74,7 +74,6 @@ public class BlackAndWhite {
     private URL can_presign(String fileBucketKey) {
         return bucketComponent.presign(fileBucketKey, Duration.ofMinutes(2));
     }
-
     private BufferedImage convertToBlackAndWhite(File file) throws IOException {
         BufferedImage originalImage = ImageIO.read(file);
         BufferedImage bwImage = new BufferedImage(originalImage.getWidth(), originalImage.getHeight(), BufferedImage.TYPE_BYTE_BINARY);
