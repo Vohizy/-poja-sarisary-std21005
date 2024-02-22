@@ -2,33 +2,24 @@ package hei.school.sarisary.endpoint.rest.controller.health;
 
 import hei.school.sarisary.PojaGenerated;
 import hei.school.sarisary.file.BucketComponent;
-import hei.school.sarisary.file.FileHash;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
-import java.nio.file.Files;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Optional;
 import java.util.UUID;
 
-import static hei.school.sarisary.file.FileHashAlgorithm.NONE;
 import static java.io.File.createTempFile;
-import static java.nio.file.Files.createTempDirectory;
-import static java.util.UUID.randomUUID;
 
 @RestController
 @AllArgsConstructor
