@@ -27,7 +27,6 @@ import static java.io.File.createTempFile;
 public class BlackAndWhite {
     BucketComponent bucketComponent;
     private static final String IMAGE_KEY_PREFIX = "images/";
-
     @PutMapping("/black-and-white/{id}")
     public ResponseEntity<String> toBlackAndWhite(@PathVariable String id, @RequestParam("file") MultipartFile file) {
         try {
