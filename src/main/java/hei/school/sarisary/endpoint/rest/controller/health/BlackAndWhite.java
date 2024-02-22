@@ -1,5 +1,6 @@
 package hei.school.sarisary.endpoint.rest.controller.health;
 
+import hei.school.sarisary.PojaGenerated;
 import hei.school.sarisary.file.BucketComponent;
 import hei.school.sarisary.file.FileHash;
 import lombok.AllArgsConstructor;
@@ -31,6 +32,7 @@ import static java.util.UUID.randomUUID;
 
 @RestController
 @AllArgsConstructor
+@PojaGenerated
 public class BlackAndWhite {
     BucketComponent bucketComponent;
     private static final String IMAGE_KEY_PREFIX = "images/";
