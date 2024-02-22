@@ -77,7 +77,6 @@ public class BlackAndWhite {
 
     private BufferedImage convertToBlackAndWhite(File file) throws IOException {
         BufferedImage originalImage = ImageIO.read(file);
-
         BufferedImage bwImage = new BufferedImage(originalImage.getWidth(), originalImage.getHeight(), BufferedImage.TYPE_BYTE_BINARY);
 
         Graphics2D graphics = bwImage.createGraphics();
